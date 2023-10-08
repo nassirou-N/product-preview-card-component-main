@@ -1,0 +1,119 @@
+:root{
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream:hsl(158, 36%, 40%);
+
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1rem; 
+    text-align: center;
+    right: 45%;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    position: relative;
+    background-color: rgb(252, 232, 232);
+    font-size: 14px;
+
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat";
+
+}
+
+.produit {
+    border-radius: 0.5rem;
+    background-color: var(--White);
+    display: grid;
+    max-width: 600px;
+    max-height: 685px;
+    color: var(--Dark_grayish_blue);
+    
+}
+source, img{
+ height: 100%;
+ width: 100%;
+background-size: cover;
+}
+
+.produit_content{
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.produit_market {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.produit_title{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--Very_dark_blue);
+    font-family: 'Fraunces';
+}
+.price_menu{
+    display: flex;
+   
+     align-items: center;
+     margin-top: 0.5rem;
+}
+.price_reduit{
+    color: var(--Dark_cyan);
+    font-weight: bold;
+    font-size: 2.5rem; 
+
+}
+.price_original{
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    padding-left: 1.5rem;
+}
+
+button{
+    background-color: var(--Dark_cyan);
+    border: none;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    display: block;
+    cursor: pointer;
+}
+.icons{
+    width: 12px;
+    height: 12px;
+}
+button:hover{
+    background-color: var(--Cream);
+}
+@media (min-width:600px){
+    .produit{
+        grid-template-columns: 1fr 1fr;
+        max-height: 600px;
+    }
+}
