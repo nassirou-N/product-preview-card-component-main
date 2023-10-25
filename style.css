@@ -10,10 +10,11 @@
 
 .attribution { 
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     font-size: 1rem; 
     text-align: center;
     right: 45%;
+    
 }
 .attribution a {
      color: hsl(228, 45%, 44%); 
@@ -28,7 +29,7 @@
 
 body{
     position: relative;
-    background-color: rgb(252, 232, 232);
+    background-color: rgb(202, 202, 202);
     font-size: 14px;
 
     display: grid;
